@@ -395,8 +395,18 @@ console.log(helensInfo);
   And finally, print the value of the mileage.
 */
 
-//Code Here 
 
+class Vehicle {
+  constructor(capacity, color, mileage) {
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
+  move(miles) {
+    this.mileage += miles;
+    return this.mileage;
+  }
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
