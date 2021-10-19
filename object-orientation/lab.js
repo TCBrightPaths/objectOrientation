@@ -16,8 +16,14 @@ let me = {
 //name (a string), color (a string), age (a number),
 //and goodBoy/goodGirl (a boolean).
 
-//Code here
+let dog = {
+  name   : "Spot",
+  color  : "black/brown",
+  age    : 4,
+  goodBoy: true
+}
 
+console.log(dog.age);
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
