@@ -105,8 +105,6 @@ let {make} = carDetails
 let {model} = carDetails
 let {year} = carDetails
 
-
-
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
 /*
@@ -114,17 +112,22 @@ let {year} = carDetails
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
-
+let salut = {
+  firstName: "Tamara",
+  lastName: "Chance",
+  title: "engineer"
+}
 function greeting( obj ) {
-  //Code Here
-  
+  let {firstName} = salut
+  let {lastName}  = salut
+  let {title}     = salut  
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
 
-
+console.log(greeting(salut));
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
@@ -134,9 +137,20 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
-
-//Code Here
-
+let states = {
+  utah: 1,
+  california: 2,
+  texas: 3,
+  arizona: 4
+}
+function totalPopulation(obj) {
+  let {utah} = states
+  let {california} = states
+  let {texas} = states
+  let {arizona} = states
+  return (utah + california + texas + arizona)
+}
+console.log(totalPopulation(states))
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
