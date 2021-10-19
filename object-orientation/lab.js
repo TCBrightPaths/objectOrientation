@@ -239,8 +239,19 @@ console.log(scruffy.name);
   Call the castSpell function on the instance of your wizard.
 */
 
-//Code here
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
 
+  castSpell() {
+    return (`${this.name} has cast ${this.favoriteSpell}!`);
+  }
+}
+let genie = new Wizard("Genie", 500, "Abracadabra");
+console.log(genie.castSpell());
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
