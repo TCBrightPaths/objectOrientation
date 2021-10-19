@@ -46,7 +46,16 @@ console.log(dog["color"]);
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+let favoriteThings = {
+  band: "The Killers",
+  food: "Strawberries",
+  person: "Doug",
+  book: "Riotous Assembly",
+  movie: "Storks",
+  holiday: "Christmas",
+  
+
+}
 
 
 /*
