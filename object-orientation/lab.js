@@ -163,9 +163,21 @@ console.log(totalPopulation(states))
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+let macros = {
+  carb: "45g",
+  fat: "12g",
+  protein: "6g"
+}
+function ingredients(obj) {
+  let newArr = []
+  let {carb} = macros
+  let {fat}  = macros
+  let {protein} = macros
+  newArr.push(carb, fat, protein);
+  return newArr;
+}
 
-
+console.log(ingredients(macros));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
