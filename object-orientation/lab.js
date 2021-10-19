@@ -65,9 +65,7 @@ let favoriteThings = {
 favoriteThings.car = ("Honda Accord");
 favoriteThings.show = ("Expanse");
 
-for (let key in favoriteThings) {
-  console.log(favoriteThings[key]);
-}
+
 
 
 
@@ -76,7 +74,17 @@ for (let key in favoriteThings) {
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
-//Code here
+ let {food} = favoriteThings
+ let {book}  = favoriteThings
+
+ favoriteThings ['book'] = 'Harry Potter'
+ favoriteThings ['food'] = "chicken nuggets"
+ 
+
+for (let key in favoriteThings) {
+  console.log(favoriteThings[key]);
+}
+
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
