@@ -81,9 +81,7 @@ favoriteThings.show = ("Expanse");
  favoriteThings ['food'] = "chicken nuggets"
  
 
-for (let key in favoriteThings) {
-  console.log(favoriteThings[key]);
-}
+
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -197,7 +195,10 @@ var user = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
+
+
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -205,8 +206,11 @@ var user = {
   Using the user object above, delete the users age off of the object.
 */
 
-//Code Here
+delete user.age;
 
+for (let key in user) {
+  console.log(user[key]);
+}
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -215,8 +219,16 @@ var user = {
   Print the name of your cat instance using dot notation.
 */
 
-//Code here
+class Cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  }
+}
+let scruffy = new Cat("Scruffy", 12, "black")
 
+console.log(scruffy.name);
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
