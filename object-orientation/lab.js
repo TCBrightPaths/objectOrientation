@@ -85,8 +85,6 @@ for (let key in favoriteThings) {
   console.log(favoriteThings[key]);
 }
 
-
-
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
@@ -102,7 +100,10 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+let {color} = carDetails
+let {make} = carDetails
+let {model} = carDetails
+let {year} = carDetails
 
 
 
