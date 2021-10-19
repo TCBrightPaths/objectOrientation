@@ -53,7 +53,7 @@ let favoriteThings = {
   book: "Riotous Assembly",
   movie: "Storks",
   holiday: "Christmas",
-  
+
 
 }
 
@@ -62,7 +62,13 @@ let favoriteThings = {
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
-//Code here
+favoriteThings.car = ("Honda Accord");
+favoriteThings.show = ("Expanse");
+
+for (let key in favoriteThings) {
+  console.log(favoriteThings[key]);
+}
+
 
 
 /*
