@@ -275,7 +275,23 @@ console.log(genie.castSpell());
     to be newPrice.
 */
 
-//Code Here
+class Phone {
+  constructor(brand, model, storage, color, price, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+  sell (){
+    this.sold = true;
+    return (`${brand} ${model} has been sold.`);
+  }
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+}
 
   
 /*
