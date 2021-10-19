@@ -286,7 +286,7 @@ class Phone {
   }
   sell (){
     this.sold = true;
-    return (`${brand} ${model} has been sold.`);
+    return (`${this.brand} ${this.model} has been sold.`);
   }
   changePrice(newPrice) {
     this.price = newPrice;
@@ -304,7 +304,9 @@ class Phone {
     - price: number
 */
 
-//Code Here
+let iphone8 = new Phone ("iphone", "8", 64, "rose gold", 400);
+let razor   = new Phone ("Motorola", "razor", 10, "black", 59)
+let brick   = new Phone ("Nokia", "T1-11", 2, "gray", 10)
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -312,8 +314,10 @@ class Phone {
 
   Then console.log that object to see the price change
 */ 
+brick.changePrice(8);
+console.log(brick);
 
-//Code Here 
+
 
 
 /*
@@ -322,7 +326,8 @@ class Phone {
   Print the value of that phone's sell property to make sure it's been changed to true
 */
 
-//Code Here 
+console.log(iphone8.sell());
+console.log(iphone8.sold);
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
@@ -341,7 +346,9 @@ const colors = {
 }
 //do not edit this object
 
-//Code Here 
+let colorsCopy = {...colors};
+
+console.log(colorsCopy);
 
 
 
@@ -369,7 +376,8 @@ const shippingInfo = {
 }
 //do not edit the objects above
 
-//Code Here
+let helensInfo = {...contactInfo, ...shippingInfo};
+console.log(helensInfo);
 
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
